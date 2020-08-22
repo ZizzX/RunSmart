@@ -7,8 +7,10 @@ header.row {
 
   &__number {
     font-size: 18px;
-    color: rgb(255, 255, 255);
     text-align: right;
+    a {
+      color: #ffffff;
+    }
   }
 }
 .header-link {
