@@ -1,5 +1,6 @@
 @import "fonts";
 @import "nullstyle";
+@import "variables";
 
 * {
   font-family: "Museo Sans", sans-serif;
@@ -10,6 +11,12 @@
 }
 .row {
   display: flex;
+}
+
+.btn {
+  display: block;
+  border-radius: 5px;
+  background-color: $redColor;
 }
 //Header
 @import "header";
@@ -38,3 +45,34 @@
     margin-top: 18px;
   }
 }
+
+//promo-work
+.promo-work {
+  &_m {
+    margin-top: 67px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__body {
+    width: 108px;
+    text-align: center;
+    margin: 0px 0px 0px 71px;
+  }
+  &__img {
+    width: 42px;
+    overflow: hidden;
+    margin: 0 auto;
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+  }
+}
+//promo-work end
