@@ -1,0 +1,150 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 870px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 650px;
+  }
+  .header {
+    &-link {
+      width: 245px;
+    }
+    &-official {
+      display: none;
+    }
+    &__number {
+      font-size: 17px;
+    }
+  }
+  .promo {
+    &-title {
+      margin-top: 80px;
+    }
+    &__select {
+      font-size: 38px;
+    }
+    &__descr {
+      font-size: 22px;
+    }
+    &-work {
+      &__img {
+        width: 37px;
+      }
+      &__text {
+        font-size: 13px;
+      }
+    }
+    &-btn {
+      width: 280px;
+      height: 49px;
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 520px;
+  }
+  .header {
+    &-link {
+      width: 200px;
+    }
+    &__number {
+      font-size: 14px;
+    }
+    &-btn {
+      width: 126px;
+      font-size: 10px;
+    }
+  }
+  .promo {
+    padding-bottom: 58px;
+    &-title {
+      margin-top: 75px;
+    }
+    &__select {
+      font-size: 30px;
+    }
+    &__descr {
+      font-size: 17px;
+      margin-top: 8px;
+    }
+    &-work {
+      &__body {
+        width: 92px;
+        margin: 0 0 0 43px;
+      }
+      &__img {
+        width: 30px;
+      }
+      &__text {
+        font-size: 12px;
+      }
+    }
+    &-btn {
+      width: 215px;
+      height: 40px;
+      font-size: 12px;
+    }
+    &-link {
+      margin: 16px 0 0 0;
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 290px;
+  }
+  .header {
+    &-link {
+      width: 144px;
+    }
+    &__number {
+      display: none;
+    }
+    &-btn {
+      margin: 0;
+      font-size: 8px;
+      width: 105px;
+      min-height: 25px;
+    }
+  }
+  .promo {
+    padding: 20px 0px;
+    &__select {
+      font-size: 21px;
+      text-align: center;
+    }
+    &__descr {
+      font-size: 12px;
+      margin: 8px 0 0 0;
+      text-align: center;
+    }
+    &-work {
+      &_m {
+        justify-content: space-between;
+      }
+      &__body {
+        width: 80px;
+        margin: 0;
+      }
+      &__text {
+        font-size: 10px;
+      }
+    }
+    &-btn {
+      margin: 67px auto 0;
+      width: 169px;
+      height: 34px;
+      font-size: 10px;
+    }
+    &-link {
+      font-size: 11px;
+      text-align: center;
+      margin: 11px 0 0 0;
+    }
+  }
+}
