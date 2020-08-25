@@ -3,7 +3,6 @@
   padding: 69px 0;
   &-row {
     justify-content: center;
-    align-items: center;
     margin: 0 -30px;
     margin-top: 65px;
   }
@@ -16,6 +15,9 @@
   &-img {
     width: 70px;
     margin: 0 auto;
+    img {
+      width: 100%;
+    }
   }
   &-descr {
     font-weight: 700;
@@ -27,9 +29,10 @@
     font-size: 14px;
     margin-top: 27px;
   }
-  &-span {
+  &__link {
     color: #ff0000;
     text-decoration-line: underline;
     text-transform: uppercase;
+    cursor: pointer;
   }
 }
