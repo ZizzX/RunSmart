@@ -21,11 +21,6 @@
   font-weight: 500;
   text-transform: uppercase;
 }
-//Header
-@import "header";
-//promo
-@import "blocks/promo";
-
 //title
 .title {
   font-size: 30px;
@@ -34,9 +29,13 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-
+//Header
+@import "header";
+//promo
+@import "blocks/promo";
 //advantage
 @import "blocks/advantage";
-
+//consultation
+@import "blocks/consultation";
 //media
 @import "media";
