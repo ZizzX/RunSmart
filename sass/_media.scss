@@ -2,6 +2,14 @@
   .container {
     max-width: 870px;
   }
+  .carousel {
+    .next {
+      right: -10px;
+    }
+    .prev {
+      left: -10px;
+    }
+  }
 }
 @media (max-width: 991px) {
   .container {
@@ -83,6 +91,32 @@
     &_btn {
       font-size: 15px;
       height: 49px;
+    }
+  }
+  .carousel {
+    .next,
+    .prev {
+      display: none;
+    }
+  }
+  .tns-outer {
+    position: relative;
+  }
+  .tns-nav {
+    position: absolute;
+    bottom: -30px;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    button {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      margin: 0 5px;
+    }
+    &-active {
+      background-color: #000;
     }
   }
 }
@@ -175,6 +209,10 @@
     &-form {
       margin-top: 20px;
     }
+  }
+  .tns-nav button {
+    width: 12px;
+    height: 12px;
   }
 }
 @media (max-width: 575px) {
@@ -274,5 +312,9 @@
   }
   .white_title {
     line-height: 1.5rem;
+  }
+  .tns-nav button {
+    width: 10px;
+    height: 10px;
   }
 }
