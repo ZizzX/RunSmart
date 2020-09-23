@@ -10,6 +10,19 @@
       left: -10px;
     }
   }
+  .catalog {
+    &__content_active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 59px -5px 0;
+    }
+    &-item {
+      max-width: 282px;
+      margin: 0 5px 10px;
+      padding: 20px 10px 27px;
+    }
+  }
 }
 @media (max-width: 991px) {
   .container {
@@ -119,6 +132,20 @@
       background-color: #000;
     }
   }
+  .catalog {
+    &__tabs {
+      margin-top: 40px;
+    }
+    &__tab {
+      width: 175px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -213,6 +240,67 @@
   .tns-nav button {
     width: 12px;
     height: 12px;
+  }
+  .catalog {
+    &__tabs {
+      margin-top: 22px;
+    }
+    &__tab {
+      width: 156px;
+      height: 36px;
+      line-height: 36px;
+      font-size: 13px;
+    }
+    &__content_active {
+      margin-top: 25px;
+    }
+    &-item {
+      max-width: 255px;
+      min-height: 351px;
+      padding: 20px 10px 16px;
+      &__img {
+        height: 160px;
+        img {
+          height: 100%;
+        }
+      }
+      &__subtitle {
+        margin-top: 11px;
+        font-size: 13px;
+      }
+      &__descr {
+        margin-top: 10px;
+        font-size: 11px;
+      }
+      &__link {
+        margin-top: 14px;
+        font-size: 11px;
+      }
+      &__line {
+        margin-top: 16px;
+      }
+      &__oldPrice {
+        font-size: 11px;
+      }
+      &__newPrice {
+        font-size: 16px;
+      }
+      &__btn {
+        width: 108px;
+        height: 34px;
+        font-size: 14px;
+      }
+      &__listItem {
+        font-size: 11px;
+        margin-bottom: 15px;
+      }
+      &__back {
+        font-size: 11px;
+      }
+      &__footer {
+        margin-top: 16px;
+      }
+    }
   }
 }
 @media (max-width: 575px) {
@@ -316,5 +404,29 @@
   .tns-nav button {
     width: 10px;
     height: 10px;
+  }
+  .catalog {
+    &__tab {
+      width: 100%;
+      font-size: 11px;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__tabs {
+      flex-direction: column;
+      margin-top: 15px;
+      padding: 0 25px;
+    }
+    &__content_active {
+      margin-top: 15px;
+    }
+    &-item {
+      min-height: 319px;
+      &__descr {
+        display: none;
+      }
+    }
   }
 }

@@ -30,10 +30,25 @@
     justify-content: center;
     margin-top: 25px;
     li {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border: 1px solid #9d9d9d;
+      border-radius: 50%;
+      line-height: 20px;
+      text-align: center;
       margin-right: 20px;
+      transition: all 0.2s;
       &:last-child {
         margin-right: 0;
       }
+    }
+    li.slick-active button,
+    li.slick-active {
+      transition: all 0.2s;
+      background-color: $redColor;
+      color: #fff;
+      border-color: $redColor;
     }
   }
 }

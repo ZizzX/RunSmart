@@ -8,7 +8,7 @@ $(document).ready(function () {
       '<button type="button" class="slick-next"><img src="img/icon/carousel/right.png"></button>',
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1200,
         settings: {
           dots: true,
           arrows: false,
@@ -16,7 +16,7 @@ $(document).ready(function () {
         },
       },
     ],
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   });
 

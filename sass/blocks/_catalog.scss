@@ -31,10 +31,10 @@
       border: none;
     }
     &:hover {
-      -webkit-box-shadow: 5px 5px 33px 5px $redColor,
-        -5px -5px 33px 5px $redColor;
-      -moz-box-shadow: 5px 5px 33px 5px $redColor, -5px -5px 33px 5px $redColor;
-      box-shadow: 5px 5px 33px 5px $redColor, -5px -5px 33px 5px $redColor;
+      -webkit-box-shadow: 2px 2px 22px 2px $redColor,
+        -2px -2px 22px 2px $redColor;
+      -moz-box-shadow: 2px 2px 22px 2px $redColor, -2px -2px 22px 2px $redColor;
+      box-shadow: 2px 2px 22px 2px $redColor, -2px -2px 22px 2px $redColor;
     }
   }
   &__content {
@@ -128,7 +128,7 @@
     }
     &__content {
       width: 50%;
-      transform: translateX(-100%);
+      transform: translateX(-120%);
       margin-right: 0;
       transition: 0.8s all;
       &_active {
@@ -152,6 +152,7 @@
       position: relative;
       margin-bottom: 27px;
       padding-left: 19px;
+      font-size: 14px;
       &::before {
         content: "";
         display: block;
