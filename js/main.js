@@ -49,6 +49,20 @@ $(document).ready(function () {
   }
   toggleSlide(".catalog-item__link");
   toggleSlide(".catalog-item__back");
+
+  //modal
+  $("[data-consultation=consultation]").on("click", function () {
+    $("#consultation, .overlay").fadeIn("slow");
+  });
+  $(".modal-close").on("click", function () {
+    $(".overlay, #consultation, #order, #thanks").fadeOut("slow");
+  });
+  $(".catalog-item__btn").each(function (i) {
+    $(this).on("click", function () {
+      $("#order .modal__descr").text($(".catalog-item__subtitle").eq(i).text());
+      $("#order, .overlay").fadeIn("slow");
+    });
+  });
 });
 
 // const slider = tns({
