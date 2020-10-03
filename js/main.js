@@ -63,30 +63,43 @@ $(document).ready(function () {
       $("#order, .overlay").fadeIn("slow");
     });
   });
+
+  //validate
+
+  function validForm(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        phone: "required",
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "Введите ваше имя",
+          minlength: jQuery.validator.format(
+            "Пожалуйста, введите не менее {0} символов"
+          ),
+        },
+        phone: {
+          required: "Введите ваш номер телефона",
+        },
+        email: {
+          required: "Введите ваш email адрес",
+          email: "Неправильно введен email адрес",
+        },
+      },
+    });
+  }
+
+  validForm("#consultation form");
+  validForm("#order form");
+  validForm("#consultation-form");
+
+  $("input[name=phone]").mask("+7 (999) 999-99-99");
 });
-
-// const slider = tns({
-//   container: ".carousel__inner",
-//   items: 1,
-//   slideBy: "page",
-//   autoplay: false,
-//   controls: false,
-//   touch: true,
-//   autoHeight: true,
-//   responsive: {
-//     1200: {
-//       nav: false,
-//     },
-//     320: {
-//       nav: true,
-//     },
-//   },
-// });
-
-// document.querySelector(".prev").addEventListener("click", function () {
-//   slider.goTo("prev");
-// });
-
-// document.querySelector(".next").addEventListener("click", function () {
-//   slider.goTo("next");
-// });

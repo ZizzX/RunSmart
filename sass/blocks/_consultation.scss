@@ -31,6 +31,15 @@
     height: 55px;
     font-size: 16px;
   }
+  .error {
+    border: 2px solid $redColor;
+  }
+  label.error {
+    text-align: center;
+    color: #fff;
+    border: none;
+    margin: -11px 0px 20px 0px;
+  }
 }
 .white_title {
   color: #ffffff;
