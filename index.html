@@ -6,14 +6,10 @@
     <title>RunSmart</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/slick.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
-    /> -->
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <section class="promo promo_p">
+    <section class="promo promo_p" id="up">
       <div class="container">
         <header class="header row">
           <a href="" class="header-link">
@@ -126,7 +122,7 @@
         </div>
         <form action="#" class="consultation-form" id="consultation-form">
           <input name="name" type="text" placeholder="Ваше имя" />
-          <input name="phone" type="number" placeholder="Ваш телефон" />
+          <input name="phone" placeholder="Ваш телефон" />
           <input name="email" type="email" placeholder="Ваш E-mail" />
           <button class="consultation_btn btn">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
@@ -650,7 +646,7 @@
     <footer class="footer">
       <div class="footer__map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.430307459345!2d37.644807315391816!3d55.76839799825725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2skz!4v1601316388358!5m2!1sru!2skz"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d943.666103954839!2d37.64528096929973!3d55.7684226183114!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2skz!4v1601917882813!5m2!1sru!2skz"
           width="100%"
           height="630"
           frameborder="0"
@@ -680,7 +676,7 @@
         <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
         <form action="#" class="consultation-form modal__form_mt">
           <input name="name" type="text" placeholder="Ваше имя" />
-          <input name="phone" type="number" placeholder="Ваш телефон" />
+          <input name="phone" placeholder="Ваш телефон" />
           <input name="email" type="email" placeholder="Ваш E-mail" />
           <button class="modal_btn btn">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
@@ -692,7 +688,7 @@
         <div class="modal__descr">Пульсометр Polar FT1</div>
         <form action="#" class="consultation-form modal__form_mt">
           <input name="name" type="text" placeholder="Ваше имя" />
-          <input name="phone" type="number" placeholder="Ваш телефон" />
+          <input name="phone" placeholder="Ваш телефон" />
           <input name="email" type="email" placeholder="Ваш E-mail" />
           <button class="modal_btn btn">Купить</button>
         </form>
@@ -707,13 +703,15 @@
       </div>
     </div>
 
+    <a href="#up" class="scrollup">
+      <img src="img/up.svg" alt="up" />
+    </a>
+
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
-
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
