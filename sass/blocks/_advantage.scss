@@ -35,4 +35,67 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+  &__heart {
+    &_animate {
+      animation: heartbit 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+  &__shoe {
+    &_animate {
+      animation: shoeRotate 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+  &__cup {
+    &_animate {
+      animation: cupRotate 1.5s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
+
+@keyframes heartbit {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shoeRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes cupRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
